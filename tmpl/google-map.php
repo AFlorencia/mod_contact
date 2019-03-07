@@ -1,0 +1,1 @@
+<div class="embed-responsive embed-responsive-16by9 gmap"><iframe class="embed-responsive-item" src="<?php echo $params->get('google_maps');?>" style="width:100%;"></iframe></div>

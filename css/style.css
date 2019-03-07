@@ -1,0 +1,243 @@
+/**************************************************************************************/
+.mod_as_contact_form
+{
+	position: relative;
+	min-height: 250px;
+}
+
+.mod_as_contact_form .mod_as_contact_form_message
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	font-size: 0;
+	line-height: 0;
+	z-index: -1;
+	text-align: center;
+	background: #fff;
+	transition: all .5s ease;
+	border: 1px solid green;
+	border-radius: 5px;
+	min-height: 200px;
+	display: none;
+	
+}
+.mod_as_contact_form .mod_as_contact_form_message.loader
+{	
+	width:100%;
+	height:100%;
+	height:100%;
+	z-index: 11;
+	background: url(../images/loading.gif) 50% 50% no-repeat #fff;
+	opacity: .8;
+	filter: alpha(opacity=80);
+}
+.mod_as_contact_form .mod_as_contact_form_message.success
+{
+	z-index: 5;
+	background: #fff;
+	font-size: 20px;
+	line-height: 1.5;
+	min-height: 200px;
+	margin-bottom: 30px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.20);
+	color:green;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5% 15px 0;
+}
+
+	/* color: #4ec385; */
+}
+.mod_as_contact_form .mod_as_contact_form_message.error
+{
+	z-index: 2;
+	font-size: 20px;
+	line-height: 24px;
+	color: #ec7b7b;
+	background: #fff;
+}
+
+
+.mod_as_contact_form .mod_as_contact_form_message:before
+{
+	 content: '';
+	 display: table-cell;
+	 width: 0;
+	 height: 100%;
+	 vertical-align: middle;
+}
+
+.mod_as_contact_form .mod_as_contact_form_message > *
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.mod_as_contact_form .controls
+{
+	position: relative;
+	display: block;
+	max-width: 100%;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.mod_as_contact_form .controls input, .mod_as_contact_form .controls select, .mod_as_contact_form textarea
+{
+	margin: 0;
+}
+
+.mod_as_contact_form .controls span
+{
+	position: absolute;
+	z-index: 1000;
+}
+
+
+.mod_as_contact_form .control-group
+{
+	margin: 0;
+}
+
+.mod_as_contact_form textarea
+{
+	width: 100%;
+	min-height: 80px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.mod_as_contact_form .control-group-textarea .controls
+{
+	display: block;
+}
+
+#recaptcha_table
+{
+	transition: all .5s ease;
+}
+
+.recaptcha_error
+{
+	box-shadow: 0 0 3px #ec7b7b;
+	background: #ec7b7b;
+}
+
+.mod_as_contact_form_recaptcha_message
+{
+	color: #ec7b7b;
+}
+
+input.error, textarea.error
+{
+	box-shadow: 0 0 3px #f00;
+}
+
+.mod_as_contact_form_placeholder
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	border-style: solid;
+	border-color: transparent;
+	cursor: text;
+	margin: 0;
+}
+
+.ie_placeholder_controls
+{
+	background: #fff;
+}
+
+.ie_placeholder
+{
+	background: none !important;
+	position: relative;
+	z-index: 2;
+}
+
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .inputbox {
+    width: 100%!important;
+}
+label.text-danger {
+    font-weight: 400;
+}
+
+
+.form-group > span >label.has-success {
+    display: none!important;
+}
+
+.form-group span {
+}
+
+
+.address.center	,address.center	{text-align:center;}
+.address.left	,address.left	{text-align:left;}
+.address.right	,address.right	{text-align:right;}
+
+.gmap iframe{margin-top:15px;
+	margin-bottom:15px;
+	}
+
+	.address .fa{
+	margin-right:5px;}
+	}
+
+
+input[aria-invalid="true"] {
+    border-color: red!important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #f4433675;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(244, 67, 54, 0.53);
+    position: relative;
+}
+
+input[aria-invalid="true"]::after {
+    content: 'Complete este valor';
+    position: absolute;
+    bottom: 15px;
+    display: block;
+}
+
+
+
+.form-group span.text-danger {
+    display: block;
+    padding: 5px;
+    transition: all 0.3s linear;
+    background: #FFEBEE;
+    margin-bottom: 3px;
+    position: relative;
+}
+
+.form-group span.text-danger::after {
+    content: '!';
+    background: red;
+    color: #fff;
+    width: 15px;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1;
+    border-radius: 4px;
+    right: 5px;
+    position: absolute;
+}
+
+.text-danger.has-success {
+    display: none !important;
+}
+
+.text-danger.has-success::after {
+    display: none !important;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<field name="titulo" type="text" label="Título" />
+	<field name="imgdesc2" type="media" directory="" label="Imagen para mostrar" />
+	<field name="descp" type="textarea" label="Desc" filter="safehtml" rows="2" width="250" height="250" />
+    <field name="aemail" type="text" label="Email" />
+	 <field name="aemail2" type="text" label="Email" />
+    <field name="dir1" type="text" label="Dirección" />
+	<field name="dir2" type="text" label="Dirección L2" />
+	<field name="tel" type="text" label="Teléfono" />
+	<field name="tel2" type="text" label="Teléfono2" />
+	<field name="wp" type="text" label="Whatsapp"/>
+	<field name="wp2" type="text" label="Whatsapp2"/>
+	<field name="movile" type="text" label="Movil"/>
+	<field name="movile2" type="text" label="Movil2"/>
+	<field name="googlemap" type="text" label="Google Map URL"/>
+
+	
+	</form>

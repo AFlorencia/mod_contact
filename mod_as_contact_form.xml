@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3" client="site" method="upgrade">
+	<name>Contacto Completo</name>
+	<creationDate>2015-11-16</creationDate>
+	<updateDate>2015-11-16</updateDate>
+	<version>1.1.0</version>
+	<author>Intergraphix</author>
+	<authorUrl>http://intergraphix.com.ar</authorUrl>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>
+		<![CDATA[	Módulo de contacto completo. Modo vertical y horizontal<br/><a href='https://www.google.com/recaptcha/admin' target='_blank'>https://www.google.com/recaptcha/admin</a> and get public and private keys.</strong><br />]]>
+	</description>
+	<files>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+		<filename module="mod_as_contact_form">mod_as_contact_form.php</filename>
+		<filename>mod_as_contact_form.xml</filename>
+		<filename>multicontact.xml</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>recaptchalib.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_as_contact_form.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_as_contact_form.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- Basic Configuration Options ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<fieldset name="basico" label="Opciones básicas">
+				<field 	name="loadstyles" 	type="radio" 	class="btn-group" 	default="0" 	label="Cargar CSS" 	description="Cargar archivos CSS">
+					<option	value="1">JYES</option>
+					<option	value="0">JNO</option>
+				</field>
+		
+				<field 	name="form_m_req" 	type="radio" 	class="btn-group" 	default="0" 	label="Mostrar Formulario de contacto" 	description="Mostrar FORM">
+					<option	value="1">JYES</option>
+					<option	value="0">JNO</option>
+				</field>
+				
+				<field 	name="social_m_req" 	type="radio" 	class="btn-group" 	default="0" 	label="Mostrar Redes Sociales" 	description="Mostrar rEDES">
+					<option	value="1">JYES</option>
+					<option	value="0">JNO</option>
+				</field>
+				
+				<field 	name="contactinfo_m_req" 	type="radio" 	class="btn-group" 	default="0" 	label="Mostrar información de contacto" 	description="Mostrar información de contacto">
+					<option	value="1">JYES</option>
+					<option	value="0">JNO</option>
+				</field>
+				
+				
+				<field 	name="showmulti" 	type="radio" 	class="btn-group" 	default="0" 	label="Mostrar varias direcciones?" 	description="Mostrar información de contacto múltiple">
+					<option	value="1">JYES</option>
+					<option	value="0">JNO</option>
+				</field>
+				
+				
+				
+				<field 	name="presentacion" 	type="list" 	class="btn-group" 	default="one-col" 	label="Presentación General"	description="Presentación en columnas para TODAS las opciones">
+					<option	value="12">Una columna</option>
+					<option	value="6">Dos columnas 6/6</option>
+					<option	value="3">Dos columnas 8/4</option></field>
+				</fieldset>
+				
+				<!--OPCIONES STANDALONE-->
+				<fieldset name="isolated-parts" label="Modo Stand Alone">
+				<field name="standalone" type="radio" 	class="btn-group" default="0" label="Modo Stand alone" description="Mostrar información de contacto">
+					<option	value="1">JYES</option>
+					<option	value="0">JNO</option>
+				</field>
+				
+				<field 	name="showonly" 	type="radio" 	class="btn-group" 	default="0" 	label="Mostrar Solo...." 	description="Mostrar información de contacto">
+					<option	value="form">Form</option>
+					<option	value="contact-data">Datos de contacto</option>
+					<option	value="social">Redes Sociales</option>
+					<option	value="multi">Multicontactos</option>
+				</field>
+				
+				
+				
+				
+				
+				</fieldset>
+				
+				
+				
+				
+				<!--END OPC ST-->
+				
+				
+				
+				
+			<!--start form-->
+			<fieldset name="contact-form" label="Formulario de contacto">
+					<field 	name="renderbox" 	type="radio" 	class="btn-group" 	default="one-col" 	label="Mostrar en modal"	description="Presentar sólo form en ventana emergente">
+					<option	value="1">JYES</option>
+					<option	value="0">JNO</option>
+				</field>
+				<field name="btntxt" type="text" showon="renderbox:1" 	label="Texto para el botón Call To Action" 	description="txt....." 	default="Contáctenos" />
+				<field name="faicon" type="text" showon="renderbox:1" 	label="Icono para el botón Call To Action" 	description="txt....." 	default="envelope" />
+				<field name="btnclose" type="text" showon="renderbox:1" 	label="Texto para el botón cerrar" 	description="txt....." 	default="Cerrar" />
+				<field 	name="presentacionf" 	type="list" 	class="btn-group" 	default="one-col" 	label="Presentación para el FORM"	description="Presentación en columnas para el FORMULARIO">
+					<option	value="12">Una columna</option>
+					<option	value="6">Dos columnas</option>
+				</field>
+				<field 	name="intro_text" 	type="textarea" 	filter="raw"	label="texto de introduccion" 	description="texto de introduccion"/>
+				<field 	name="email_req" 	type="radio" 	class="btn-group" 	default="required" 	label="MOD_ASCONTACT_FORM_FIELD_EMAIL_REQUIRE_LABEL" 	description="MOD_ASCONTACT_FORM_FIELD_EMAIL_REQUIRE_DESC">
+					<option	value="required">JYES</option>
+					<option	value=" ">JNO</option>
+				</field>
+				<field 	name="phone_req" 	type="radio" 	class="btn-group" 	default="required" 	label="MOD_ASCONTACT_FORM_FIELD_PHONE_REQUIRE_LABEL" 	description="MOD_ASCONTACT_FORM_FIELD_PHONE_REQUIRE_DESC">
+					<option	value="required">JYES</option>
+					<option	value=" ">JNO</option>
+				</field>
+				<field 	name="adicional_req" 	type="radio" 	class="btn-group" 	default="required" 	label="Requerir completar campo adicional" 	description="Requerir completar campo adicional">
+					<option	value="required">JYES</option>
+					<option	value=" ">JNO</option>
+				</field>
+				<field 	name="admin_email" 	type="text" 	label="MOD_ASCONTACT_FORM_FIELD_ADMIN_EMAIL_LABEL" 	description="MOD_ASCONTACT_FORM_FIELD_ADMIN_EMAIL_DESC" 	default=""	required="true" />
+				<field 	name="cc_email" 	type="text" 	label="MOD_ASCONTACT_FORM_FIELD_CC_LABEL" 	description="MOD_ASCONTACT_FORM_FIELD_CC_DESC" 	default="" />
+				<field 	name="bcc_email" 	type="text" 	description="MOD_ASCONTACT_FORM_FIELD_BCC_DESC" 	label="MOD_ASCONTACT_FORM_FIELD_BCC_LABEL"	default="" />
+				<field type="spacer"/>
+				<field 	name="success_notify" 	type="textarea"	rows="5"	cols="50"	label="MOD_ASCONTACT_FORM_FIELD_SUCCESS_LABEL" 	description="MOD_ASCONTACT_FORM_FIELD_SUCCESS_DESC" 	default="Thank You! Your message has been sent" />
+				<field 	name="failure_notify"	type="textarea"	rows="5"	cols="50"	label="MOD_ASCONTACT_FORM_FIELD_ERROR_LABEL" 	description="MOD_ASCONTACT_FORM_FIELD_ERROR_DESC" 	default="Something went wrong, please try again later" />
+				<field 	name="errors_position" 	type="list" 	class="btn-group" 	default="right-top" 	label="MOD_ASCONTACT_FORM_FIELD_ERROR_POS_LABEL"	description="MOD_ASCONTACT_FORM_FIELD_ERROR_POS_DESC" >
+					<option	value="top-left">top-left</option>
+					<option	value="top-center">top-center</option>
+					<option	value="top-right">top-right</option>
+					<option	value="right-top">right-top</option>
+					<option	value="right-center">right-center</option>
+					<option	value="right-bottom">right-bottom</option>
+					<option	value="bottom-right">bottom-right</option>
+					<option	value="bottom-center">bottom-center</option>
+					<option	value="bottom-left">bottom-left</option>
+					<option	value="left-bottom">left-bottom</option>
+					<option	value="left-center">left-center</option>
+					<option	value="left-top">left-top</option>
+				</field>
+				<field type="spacer"/>
+				<field 	name="email_publish" 	type="radio" 	class="btn-group" 	default="1" 	label="MOD_ASCONTACT_FORM_FIELD_EMAIL_PUBLISH_LABEL" 	description="MOD_ASCONTACT_FORM_FIELD_EMAIL_PUBLISH_DESC">
+					<option	value="1">JYES</option>
+					<option	value="0">JNO</option>
+				</field>
+				<field 	name="phone_publish" 	type="radio" 	class="btn-group" 	default="1" 	label="MOD_ASCONTACT_FORM_FIELD_PHONE_LABEL" 	description="MOD_ASCONTACT_FORM_FIELD_PHONE_DESC">
+					<option	value="1">JYES</option>
+					<option	value="0">JNO</option>
+				</field>
+				<field 	name="subject_publish" 	type="radio" 	class="btn-group" 	default="1" 	label="MOD_ASCONTACT_FORM_FIELD_SUBJECT_LABEL" 	description="MOD_ASCONTACT_FORM_FIELD_SUBJECT_DESC">
+					<option	value="1">JYES</option>
+					<option	value="0">JNO</option>
+				</field>
+				<field 	name="adicional_publish" 	type="radio" 	class="btn-group" 	default="1" 	label="Publicar campo adicional" 	description="Publicar campo adicional">
+					<option	value="1">JYES</option>
+					<option	value="0">JNO</option>
+				</field>
+				<field 	name="clear_publish" 	type="radio" 	class="btn-group" 	default="1" 	label="MOD_ASCONTACT_FORM_FIELD_CLEAR_LABEL" 	description="MOD_ASCONTACT_FORM_FIELD_CLEAR_DESC">
+					<option	value="1">JYES</option>
+					<option	value="0">JNO</option>
+				</field>
+				<field type="spacer"/>
+				<field 	name="name_name" 	type="text" 	label="MOD_ASCONTACT_FORM_FIELD_NAME_NAME_LABEL" 	description="MOD_ASCONTACT_FORM_FIELD_NAME_NAME_DESC" 	default="Name" />
+				<field 	name="email_name" 	type="text" 	label="MOD_ASCONTACT_FORM_FIELD_EMAIL_NAME_LABEL" 	description="MOD_ASCONTACT_FORM_FIELD_EMAIL_NAME_DESC" 	default="Email" />
+				<field 	name="phone_name" 	type="text" 	label="MOD_ASCONTACT_FORM_FIELD_PHONE_NAME_LABEL" 	description="MOD_ASCONTACT_FORM_FIELD_PHONE_NAME_DESC" 	default="Phone" />
+				<field 					name="adicional_name" 					type="text" 					label="Nombre Campo Adicional" 					description="Nombre para el campo adicional" 					default="adicional">					</field>
+				<field 	name="subject_name" 	type="text" 	label="MOD_ASCONTACT_FORM_FIELD_SUBJECT_NAME_LABEL" 	description="MOD_ASCONTACT_FORM_FIELD_SUBJECT_NAME_DESC" 	default="Subject"/>
+				<field 	name="message_name" 	type="text" 	label="MOD_ASCONTACT_FORM_FIELD_MESSAGE_NAME_LABEL" 	description="MOD_ASCONTACT_FORM_FIELD_MESSAGE_NAME_DESC" 	default="Message" />
+				<field 	name="clearbtn_name" 	type="text" 	description="MOD_ASCONTACT_FORM_FIELD_CLEAR_NAME_LABEL" 	label="MOD_ASCONTACT_FORM_FIELD_CLEAR_NAME_DESC" 	default="Clear" />
+				<field 	name="submitbtn_name" 	type="text" 	description="MOD_ASCONTACT_FORM_FIELD_SUBMIT_NAME_LABEL" 	label="MOD_ASCONTACT_FORM_FIELD_SUBMIT_NAME_DESC" 	default="Send" />
+				<field 	name="labels_pos" 	type="radio" 	class="btn-group" 	default="1" 	label="MOD_ASCONTACT_FORM_FIELD_LABELS_POS_LABEL" 	description="MOD_ASCONTACT_FORM_FIELD_LABELS_POS_DESC">
+					<option	value="1">MOD_ASCONTACT_FORM_FIELD_INSIDE</option>
+					<option	value="0">MOD_ASCONTACT_FORM_FIELD_OUTSIDE</option>
+				</field>
+			</fieldset>
+
+			
+				<!--REDES-->
+		
+			<fieldset name="social_links" label="Redes Sociales">
+				
+				<field name="btnAlign" type="list" 	class="btn-group" 	label="Alineación de los botones" >
+					<option value="">Inherit</option>
+					<option value="btn-cols">Columna centrada</option>
+					<option value="btn-right-cols">Columna derecha</option>
+					<option value="btn-left-cols">Columna izquierda</option>
+					<option value="btn-no-align">Centrada en fila</option>
+					<option value="btn-align-right">Derecha en fila</option>
+					<option value="btn-align-left">Izquierda en fila</option>
+				</field>
+				<field name="estilo" type="list"	label="Estilo de los botones" >
+					<option value="btn-flat">Normal</option>
+					<option value="btn-flat">Plano</option>
+					<option value="btn-flat-square">Plano cuadrado</option>
+					<option value="flat-rounded">Plano bordes Redondos</option>
+					<option value="btn-shadow">Plano Sombra</option>
+					<option value="btn-flat-circle">Redondos</option>
+					<option value="btn-flat-circle-border">Redondos borde</option>
+					<option value="btn-grad">Fondo deg</option>
+					<option value="btn-3d">Efecto 3D</option>
+					<option value="btn-fff">Icono blanco</option>
+					<option value="btn-000">Icono negro</option>
+				</field>
+				<field	name="facebookURL"	type="text"	default=""	label="Facebook URL"	description="" />
+				<field	name="twitterURL"	type="text"	default=""	label="Twitter URL"	description="" />
+				<field	name="googleURL"	type="text"	default=""	label="Google URL"	description="" />
+				<field	name="instagramURL"	type="text"	default=""	label="Instagram URL"	description="" />
+				<field	name="whatsappNR"	type="text"	default=""	label="Nro Whatsapp"	description=" Sin 54 ni 9 y sin espacios" />
+				<field	name="youtubeURL"	type="text"	default=""	label="Youtube URL"	description="" />
+				<field	name="pinterestURL"	type="text"	default=""	label="Pinterest URL"	description="" />
+				<field	name="linkedinURL"	type="text"	default=""	label="Linkedin URL"	description="" />
+				<field	name="flickrURL"	type="text"	default=""	label="Flickr URL"	description="" />
+				<field					name="skypeURL"	type="text"	default=""	label="Skype User"	description="" />
+				<field	name="soundcloudURL"	type="text"	default=""	label="Soundcloud URL"	description="" />
+				<field					name="mlibreURL"	type="text"	default=""	label="Mercado Libre URL"	description="" />
+			</fieldset>
+			<fieldset name="contact_info" label="Datos de contacto">
+				
+				<field type="list" name="customStyle" label="Alineación del texto" description=" Alineación....">
+					<option value="center">Centrado</option>
+					<option value="left">Izquierda</option>
+					<option value="right">Derecha</option>
+				</field>
+				<field 					name="showdesc" 					type="list" 					default="1" 					label="Mostrar description del sitio" 					>
+					<option	value="1">JYES</option>
+					<option	value="0">JNO</option>
+					<option	value="3">Personalizado</option>
+				</field>
+				<field 					name="showSitename" 					type="radio" 					class="btn-group" 					default="1" 					label="Mostrar Nombre del sitio" 					description="Mostrar nombre del sitio">
+					<option	value="1">JYES</option>
+					<option	value="0">JNO</option>
+				</field>
+				<field name="imgdesc" type="media" directory="" label="Imagen para mostrar"/>
+				<field 					name="showUrl" 					type="radio" 					class="btn-group" 					default="1" 					label="Mostrar URL" 					description="Mostrar URL del sitio">
+					<option	value="1">JYES</option>
+					<option	value="0">JNO</option>
+				</field>
+				<field	name="direccion"	type="text"	default=""	label="Dirección"	description="Calle nro, piso dpto" />
+				<field	name="direccion2"	type="text"	default=""	label="Dirección"	description="Calle nro, piso dpto, ciudad, provincia, pais" />
+				<field	name="telefono"	type="text"	default=""	label="Teléfono fijo"	description="" />
+				<field	name="telefono2"	type="text"	default=""	label="Teléfono fijo"	description="" />
+				<field	name="movil"	type="text"	default=""	label="Móvil"	description="Teléfono Móvil" />
+				<field	name="wmovil"	type="text"	default=""	label="Whatsapp"	description="Teléfono Móvil" />
+				<field	name="email1"	type="text"	default=""	label="Email"	description="" />
+				<field	name="email2"	type="text"	default=""	label="Email #2"	description="" />
+				
+				<field 	name="google_m_req_req" 	type="radio" 	class="btn-group" 	default="0" 	label="Mostrar Google Maps" 	description="Mostrar Google Maps">
+					<option	value="1">JYES</option>
+					<option	value="0">JNO</option>
+				</field>
+				<field 	name="google_maps" 	type="textarea"	rows="5"	cols="50"	description="Código de inserción de Google Maps" 	label="Código de Google maps" 	/>
+			</fieldset>
+			
+			<fieldset name="advanced" label="Advanced Options">
+				<field type="spacer"/>
+				<field 	name="moduleclass_sfx" 	type="text" 	label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" 	description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+				/>
+			</fieldset>
+			<!--MULTICONTACT-->
+			<fieldset name="multicontact" label="Multiform">
+				<field 	name="showmulti" 	type="radio" 	class="btn-group" 	default="0" 	label="Mostrar varias direcciones?" 	description="Mostrar información de contacto múltiple">
+					<option	value="1">JYES</option>
+					<option	value="0">JNO</option>
+				</field>
+				<field type="list" name="overrideCommon" label="Reemplazar datos contacto" description=" ">
+					<option	value="1">JYES</option>
+					<option	value="0" default="0">JNO</option>
+				</field>
+				<field type="list" name="customStyle2" label="Alineación del texto" description=" Alineación....">
+					<option value="center">Centrado</option>
+					<option value="left">Izquierda</option>
+					<option value="right">Derecha</option>
+				</field>
+				<field type="list" name="customStyle3" label="Presentación en columnas" description=" Alineación....">
+					<option value="12">1 Columna</option>
+					<option value="calc">Separar items en columnas</option>
+				</field>
+				<field name="contacto" type="subform" formsource="modules/mod_as_contact_form/multicontact.xml" multiple="true" label="Contactos multiples" description="Subform Field Description" max="10"/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

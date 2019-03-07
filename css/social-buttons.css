@@ -1,0 +1,1400 @@
+
+
+/*
+ * Social Buttons for Bootstrap
+ *
+ * Copyright 2013-2015 Panayiotis Lipiridis
+ * Licensed under the MIT License
+ *
+ * https://github.com/lipis/bootstrap-social
+ */
+
+ 
+.btn-social{
+	position:relative;
+	padding-left:44px;
+	text-align:left;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis
+	}
+
+
+.btn-social.btn-lg{padding-left:61px}.btn-social.btn-lg :first-child{line-height:45px;width:45px;font-size:1.8em}
+.btn-social.btn-sm{padding-left:38px}.btn-social.btn-sm :first-child{line-height:28px;width:28px;font-size:1.4em}
+.btn-social.btn-xs{padding-left:30px}.btn-social.btn-xs :first-child{line-height:20px;width:20px;font-size:1.2em}
+.btn-social-icon{position:relative;/* padding-left:44px; *//* text-align:left; *//* white-space:nowrap; */overflow:hidden;/* text-overflow:ellipsis; */height: 40px;width: 40px;padding:0;transition: all 300ms;color: #fff;margin-right: 5px;display: inline-flex;align-items: center;justify-content: center;border-radius: 50%;}
+.btn-social-icon .fa{/* position:absolute; *//* left:0; *//* top:0; *//* bottom:0; *//* width:32px; *//* line-height:34px; */font-size: 1.2em;text-align:center;text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);transition: all 0.3s linear;}
+.btn-social-icon.btn-lg{padding-left:61px}.btn-social-icon.btn-lg :first-child{line-height:45px;width:45px;font-size:1.8em}
+.btn-social-icon.btn-sm{padding-left:38px}.btn-social-icon.btn-sm :first-child{line-height:28px;width:28px;font-size:1.4em}
+.btn-social-icon.btn-xs{padding-left:30px}.btn-social-icon.btn-xs :first-child{line-height:20px;width:20px;font-size:1.2em}
+
+.btn-social-icon.btn-lg{
+	height:45px;width:45px;padding-left:0;padding-right:0}
+.btn-social-icon.btn-sm{height:30px;width:30px;padding-left:0;padding-right:0
+}
+.btn-social-icon.btn-xs{height:22px;width:22px;padding-left:0;padding-right:0}
+
+
+
+
+
+
+
+
+.social-menu-bar {
+    margin: 0;
+    text-align: center;
+}
+/* btn-no-aling		btn-align-right		btn-align-left */
+
+.social-menu-bar.btn-align-right{
+	float:right;
+	text-align:right;
+}
+
+.social-menu-bar.btn-align-left{
+	float:left;
+	text-align:left;
+	width:100%;
+	margin:0 0 15px 0;
+}
+.social-menu-bar.btn-no-aling{
+	float:none;
+	text-align:center;
+}
+.social-menu-bar.btn-cols{
+	float: none;
+	text-align:center;
+	width: auto;
+}
+
+.social-menu-bar.btn-left-cols{
+	float: left;
+	}
+	.social-menu-bar.btn-right-cols{
+	float: right;
+	text-align: right;
+	width: auto;
+	}
+.social-menu-bar.btn-cols a.btn{
+    float: none;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.social-menu-bar.btn-left-cols a.btn{
+       float: none;
+    display: block;
+    margin-bottom: 8px;
+}
+.social-menu-bar.btn-right-cols a.btn{
+	    float: none;
+	    display: block;
+	    margin-bottom: 8px;
+	    text-align: center;
+}
+.social-menu-bar.btn-align-right a.btn{float:right;}
+
+.social-menu-bar.btn-align-left a.btn{float:left;}
+
+.social-menu-bar.btn-no-align a.btn{float:none;}
+.btn-google {
+    background-color: #dd4b39;
+    
+}
+
+
+
+.social-menu-bar.btn-flat .btn {
+    margin-right: 5px;
+    float: right;
+    border: none;
+    transition: all 0.3s linear !important;
+    box-shadow: 0 2px 10px -1px rgba(0, 0, 0, 0.4), inset 0 7px 2px 1px rgba(255, 255, 255, 0.2);
+}
+btn.btn-social-icon:hover, .btn.btn-social-icon:focus, .btn.btn-social-icon:active, .btn.btn-social-icon.active{
+	
+	color:#fff!important}
+
+.btn-social-icon:hover .fa {
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 rgba(0,0,0,0.2);
+  
+}
+.btn-000 .btn-social-icon{
+	color:#000;
+	background:transparent;
+}
+
+.social-menu-bar.btn-fff .btn-social-icon{
+	color:#fff;
+	background:transparent;
+}
+
+.social-menu-bar.btn-000 .btn-social-icon{
+	color:#000;
+	background:transparent;
+}
+
+
+.social-menu-bar .btn-facebook {
+  
+  background: #3b5998;
+ 
+  
+}
+.social-menu-bar.btn-flat .btn-facebook {
+ background: #3b5998;
+}
+.social-menu-bar.btn-flat-square .btn-facebook {
+ 
+  background: #3b5998;
+  
+}
+.social-menu-bar.btn-flat-circle .btn-facebook {
+  background: #3b5998;
+  border-radius: 50%;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-facebook {
+  height: 42px;
+  width: 42px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  border: 4px solid #3b5998;
+  background: transparent;
+  border-radius: 50%;
+  line-height: 1;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-facebook .fa {
+  color: #3b5998;
+}
+.social-menu-bar.btn-grad .btn-facebook {
+  background: #3b5998;
+  background-image: -webkit-linear-gradient(top, #263961 0%, #3b5998 100%);
+  background-image: -o-linear-gradient(top, #263961 0%, #3b5998 100%);
+  background-image: linear-gradient(to bottom, #263961 0%, #3b5998 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff263961', endColorstr='#ff3b5998', GradientType=0);
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-facebook {
+  background: #3b5998;
+  background-image: -webkit-linear-gradient(top, #263961 0%, #3b5998 100%);
+  background-image: -o-linear-gradient(top, #263961 0%, #3b5998 100%);
+  background-image: linear-gradient(to bottom, #263961 0%, #3b5998 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff263961', endColorstr='#ff3b5998', GradientType=0);
+  box-shadow: inset 0px 1px 0px #5f7ec1, 0px 5px 0px 0px #263961, 0px 10px 5px #999999;
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-facebook:hover {
+  box-shadow: none;
+}
+.social-menu-bar.btn-flat-rounded .btn-facebook {
+  background: #3b5998;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-facebook {
+  background: #3b5998;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-facebook .fa {
+  text-shadow: 1px 1px 1px #1e2e4f, 2px 2px 1px #1e2e4f, 3px 3px 1px #1e2e4f, 4px 4px 1px #1e2e4f, 5px 5px 1px #1e2e4f, 6px 6px 1px #1e2e4f, 7px 7px 1px #1e2e4f, 8px 8px 1px #1e2e4f, 9px 9px 1px #1e2e4f, 10px 10px 1px #1e2e4f, 11px 11px 1px #1e2e4f, 12px 12px 1px #1e2e4f, 13px 13px 1px #1e2e4f, 14px 14px 1px #1e2e4f, 15px 15px 1px #1e2e4f, 16px 16px 1px #1e2e4f, 17px 17px 1px #1e2e4f, 18px 18px 1px #1e2e4f, 19px 19px 1px #1e2e4f, 20px 20px 1px #1e2e4f, 21px 21px 1px #1e2e4f, 22px 22px 1px #1e2e4f, 23px 23px 1px #1e2e4f, 24px 24px 1px #1e2e4f, 25px 25px 1px #1e2e4f, 26px 26px 1px #1e2e4f, 27px 27px 1px #1e2e4f, 28px 28px 1px #1e2e4f, 29px 29px 1px #1e2e4f, 30px 30px 1px #1e2e4f, 31px 31px 1px #1e2e4f, 32px 32px 1px #1e2e4f, 33px 33px 1px #1e2e4f, 34px 34px 1px #1e2e4f, 35px 35px 1px #1e2e4f, 36px 36px 1px #1e2e4f, 37px 37px 1px #1e2e4f, 38px 38px 1px #1e2e4f, 39px 39px 1px #1e2e4f, 40px 40px 1px #1e2e4f, 41px 41px 1px #1e2e4f, 42px 42px 1px #1e2e4f, 43px 43px 1px #1e2e4f, 44px 44px 1px #1e2e4f, 45px 45px 1px #1e2e4f, 46px 46px 1px #1e2e4f, 47px 47px 1px rgba(30, 46, 79, 0.9), 48px 48px 1px rgba(30, 46, 79, 0.6), 49px 49px 1px rgba(30, 46, 79, 0.4), 50px 50px 1px rgba(30, 46, 79, 0.2),  0px 0px 0px rgba(0,0,0,0.1);
+}
+.social-menu-bar.btn-shadow .btn-facebook:hover {
+  
+}
+.social-menu-bar.btn-shadow .btn-facebook:hover .fa {
+  text-shadow: none;
+}
+.social-menu-bar.btn-000 .btn-facebook:hover {
+  background: #3b5998;
+  
+}
+.social-menu-bar .btn-bitbucket {
+  border: none;
+}
+.btn-whatsapp {
+  color: #ffffff;
+  background-color: #25d366;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.social-menu-bar .btn-bitbucket {
+  
+  background: #205081;
+ 
+  
+}
+.social-menu-bar .btn-bitbucket:hover {
+  
+}
+.social-menu-bar.btn-flat .btn-bitbucket {
+ 
+  
+  background: #205081;
+  
+}
+.social-menu-bar.btn-flat-square .btn-bitbucket {
+  border-radius: 0;
+  background: #205081;
+  
+}
+.social-menu-bar.btn-flat-circle .btn-bitbucket {
+  background: #205081;
+  border-radius: 50%;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-bitbucket {
+  height: 42px;
+  width: 42px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  border: 4px solid #205081;
+  background: transparent;
+  border-radius: 50%;
+  line-height: 1;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-bitbucket .fa {
+  color: #205081;
+}
+.social-menu-bar.btn-grad .btn-bitbucket {
+  background: #205081;
+  background-image: -webkit-linear-gradient(top, #112a44 0%, #205081 100%);
+  background-image: -o-linear-gradient(top, #112a44 0%, #205081 100%);
+  background-image: linear-gradient(to bottom, #112a44 0%, #205081 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff112a44', endColorstr='#ff205081', GradientType=0);
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-bitbucket {
+  background: #205081;
+  background-image: -webkit-linear-gradient(top, #112a44 0%, #205081 100%);
+  background-image: -o-linear-gradient(top, #112a44 0%, #205081 100%);
+  background-image: linear-gradient(to bottom, #112a44 0%, #205081 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff112a44', endColorstr='#ff205081', GradientType=0);
+  box-shadow: inset 0px 1px 0px #2f76be, 0px 5px 0px 0px #112a44, 0px 10px 5px #999999;
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-bitbucket:hover {
+  box-shadow: none;
+}
+.social-menu-bar.btn-flat-rounded .btn-bitbucket {
+  background: #205081;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-bitbucket {
+  background: #205081;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-bitbucket .fa {
+  text-shadow: 1px 1px 1px #0c1d2f, 2px 2px 1px #0c1d2f, 3px 3px 1px #0c1d2f, 4px 4px 1px #0c1d2f, 5px 5px 1px #0c1d2f, 6px 6px 1px #0c1d2f, 7px 7px 1px #0c1d2f, 8px 8px 1px #0c1d2f, 9px 9px 1px #0c1d2f, 10px 10px 1px #0c1d2f, 11px 11px 1px #0c1d2f, 12px 12px 1px #0c1d2f, 13px 13px 1px #0c1d2f, 14px 14px 1px #0c1d2f, 15px 15px 1px #0c1d2f, 16px 16px 1px #0c1d2f, 17px 17px 1px #0c1d2f, 18px 18px 1px #0c1d2f, 19px 19px 1px #0c1d2f, 20px 20px 1px #0c1d2f, 21px 21px 1px #0c1d2f, 22px 22px 1px #0c1d2f, 23px 23px 1px #0c1d2f, 24px 24px 1px #0c1d2f, 25px 25px 1px #0c1d2f, 26px 26px 1px #0c1d2f, 27px 27px 1px #0c1d2f, 28px 28px 1px #0c1d2f, 29px 29px 1px #0c1d2f, 30px 30px 1px #0c1d2f, 31px 31px 1px #0c1d2f, 32px 32px 1px #0c1d2f, 33px 33px 1px #0c1d2f, 34px 34px 1px #0c1d2f, 35px 35px 1px #0c1d2f, 36px 36px 1px #0c1d2f, 37px 37px 1px #0c1d2f, 38px 38px 1px #0c1d2f, 39px 39px 1px #0c1d2f, 40px 40px 1px #0c1d2f, 41px 41px 1px #0c1d2f, 42px 42px 1px #0c1d2f, 43px 43px 1px #0c1d2f, 44px 44px 1px #0c1d2f, 45px 45px 1px #0c1d2f, 46px 46px 1px #0c1d2f, 47px 47px 1px rgba(12, 29, 47, 0.9), 48px 48px 1px rgba(12, 29, 47, 0.6), 49px 49px 1px rgba(12, 29, 47, 0.4), 50px 50px 1px rgba(12, 29, 47, 0.2),  0px 0px 0px rgba(0,0,0,0.1);
+}
+.social-menu-bar.btn-shadow .btn-bitbucket:hover {
+  
+}
+.social-menu-bar.btn-shadow .btn-bitbucket:hover .fa {
+  text-shadow: none;
+}
+.social-menu-bar.btn-000 .btn-bitbucket:hover {
+  background: #205081;
+  
+}
+.social-menu-bar .btn-dropbox {
+  border: none;
+}
+.social-menu-bar .btn-dropbox {
+  
+  background: #1087dd;
+ 
+  
+}
+.social-menu-bar .btn-dropbox:hover {
+  
+}
+.social-menu-bar.btn-flat .btn-dropbox {
+ 
+  
+  background: #1087dd;
+  
+}
+.social-menu-bar.btn-flat-square .btn-dropbox {
+  border-radius: 0;
+  background: #1087dd;
+  
+}
+.social-menu-bar.btn-flat-circle .btn-dropbox {
+  background: #1087dd;
+  border-radius: 50%;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-dropbox {
+  height: 42px;
+  width: 42px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  border: 4px solid #1087dd;
+  background: transparent;
+  border-radius: 50%;
+  line-height: 1;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-dropbox .fa {
+  color: #1087dd;
+}
+.social-menu-bar.btn-grad .btn-dropbox {
+  background: #1087dd;
+  background-image: -webkit-linear-gradient(top, #0b5b96 0%, #1087dd 100%);
+  background-image: -o-linear-gradient(top, #0b5b96 0%, #1087dd 100%);
+  background-image: linear-gradient(to bottom, #0b5b96 0%, #1087dd 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0b5b96', endColorstr='#ff1087dd', GradientType=0);
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-dropbox {
+  background: #1087dd;
+  background-image: -webkit-linear-gradient(top, #0b5b96 0%, #1087dd 100%);
+  background-image: -o-linear-gradient(top, #0b5b96 0%, #1087dd 100%);
+  background-image: linear-gradient(to bottom, #0b5b96 0%, #1087dd 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0b5b96', endColorstr='#ff1087dd', GradientType=0);
+  box-shadow: inset 0px 1px 0px #48aaf2, 0px 5px 0px 0px #0b5b96, 0px 10px 5px #999999;
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-dropbox:hover {
+  box-shadow: none;
+}
+.social-menu-bar.btn-flat-rounded .btn-dropbox {
+  background: #1087dd;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-dropbox {
+  background: #1087dd;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-dropbox .fa {
+  text-shadow: 1px 1px 1px #094d7e, 2px 2px 1px #094d7e, 3px 3px 1px #094d7e, 4px 4px 1px #094d7e, 5px 5px 1px #094d7e, 6px 6px 1px #094d7e, 7px 7px 1px #094d7e, 8px 8px 1px #094d7e, 9px 9px 1px #094d7e, 10px 10px 1px #094d7e, 11px 11px 1px #094d7e, 12px 12px 1px #094d7e, 13px 13px 1px #094d7e, 14px 14px 1px #094d7e, 15px 15px 1px #094d7e, 16px 16px 1px #094d7e, 17px 17px 1px #094d7e, 18px 18px 1px #094d7e, 19px 19px 1px #094d7e, 20px 20px 1px #094d7e, 21px 21px 1px #094d7e, 22px 22px 1px #094d7e, 23px 23px 1px #094d7e, 24px 24px 1px #094d7e, 25px 25px 1px #094d7e, 26px 26px 1px #094d7e, 27px 27px 1px #094d7e, 28px 28px 1px #094d7e, 29px 29px 1px #094d7e, 30px 30px 1px #094d7e, 31px 31px 1px #094d7e, 32px 32px 1px #094d7e, 33px 33px 1px #094d7e, 34px 34px 1px #094d7e, 35px 35px 1px #094d7e, 36px 36px 1px #094d7e, 37px 37px 1px #094d7e, 38px 38px 1px #094d7e, 39px 39px 1px #094d7e, 40px 40px 1px #094d7e, 41px 41px 1px #094d7e, 42px 42px 1px #094d7e, 43px 43px 1px #094d7e, 44px 44px 1px #094d7e, 45px 45px 1px #094d7e, 46px 46px 1px #094d7e, 47px 47px 1px rgba(9, 77, 126, 0.9), 48px 48px 1px rgba(9, 77, 126, 0.6), 49px 49px 1px rgba(9, 77, 126, 0.4), 50px 50px 1px rgba(9, 77, 126, 0.2),  0px 0px 0px rgba(0,0,0,0.1);
+}
+.social-menu-bar.btn-shadow .btn-dropbox:hover {
+  
+}
+.social-menu-bar.btn-shadow .btn-dropbox:hover .fa {
+  text-shadow: none;
+}
+.social-menu-bar.btn-000 .btn-dropbox:hover {
+  background: #1087dd;
+  
+}
+.social-menu-bar .btn-flickr {
+  border: none;
+}
+.social-menu-bar .btn-flickr {
+  
+  background: #ff0084;
+ 
+  
+}
+.social-menu-bar .btn-flickr:hover {
+  
+}
+.social-menu-bar.btn-flat .btn-flickr {
+ 
+  
+  background: #ff0084;
+  
+}
+.social-menu-bar.btn-flat-square .btn-flickr {
+  border-radius: 0;
+  background: #ff0084;
+  
+}
+.social-menu-bar.btn-flat-circle .btn-flickr {
+  background: #ff0084;
+  border-radius: 50%;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-flickr {
+  height: 42px;
+  width: 42px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  border: 4px solid #ff0084;
+  background: transparent;
+  border-radius: 50%;
+  line-height: 1;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-flickr .fa {
+  color: #ff0084;
+}
+.social-menu-bar.btn-grad .btn-flickr {
+  background: #ff0084;
+  background-image: -webkit-linear-gradient(top, #b3005c 0%, #ff0084 100%);
+  background-image: -o-linear-gradient(top, #b3005c 0%, #ff0084 100%);
+  background-image: linear-gradient(to bottom, #b3005c 0%, #ff0084 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb3005c', endColorstr='#ffff0084', GradientType=0);
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-flickr {
+  background: #ff0084;
+  background-image: -webkit-linear-gradient(top, #b3005c 0%, #ff0084 100%);
+  background-image: -o-linear-gradient(top, #b3005c 0%, #ff0084 100%);
+  background-image: linear-gradient(to bottom, #b3005c 0%, #ff0084 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb3005c', endColorstr='#ffff0084', GradientType=0);
+  box-shadow: inset 0px 1px 0px #ff4da9, 0px 5px 0px 0px #b3005c, 0px 10px 5px #999999;
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-flickr:hover {
+  box-shadow: none;
+}
+.social-menu-bar.btn-flat-rounded .btn-flickr {
+  background: #ff0084;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-flickr {
+  background: #ff0084;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-flickr .fa {
+  text-shadow: 1px 1px 1px #99004f, 2px 2px 1px #99004f, 3px 3px 1px #99004f, 4px 4px 1px #99004f, 5px 5px 1px #99004f, 6px 6px 1px #99004f, 7px 7px 1px #99004f, 8px 8px 1px #99004f, 9px 9px 1px #99004f, 10px 10px 1px #99004f, 11px 11px 1px #99004f, 12px 12px 1px #99004f, 13px 13px 1px #99004f, 14px 14px 1px #99004f, 15px 15px 1px #99004f, 16px 16px 1px #99004f, 17px 17px 1px #99004f, 18px 18px 1px #99004f, 19px 19px 1px #99004f, 20px 20px 1px #99004f, 21px 21px 1px #99004f, 22px 22px 1px #99004f, 23px 23px 1px #99004f, 24px 24px 1px #99004f, 25px 25px 1px #99004f, 26px 26px 1px #99004f, 27px 27px 1px #99004f, 28px 28px 1px #99004f, 29px 29px 1px #99004f, 30px 30px 1px #99004f, 31px 31px 1px #99004f, 32px 32px 1px #99004f, 33px 33px 1px #99004f, 34px 34px 1px #99004f, 35px 35px 1px #99004f, 36px 36px 1px #99004f, 37px 37px 1px #99004f, 38px 38px 1px #99004f, 39px 39px 1px #99004f, 40px 40px 1px #99004f, 41px 41px 1px #99004f, 42px 42px 1px #99004f, 43px 43px 1px #99004f, 44px 44px 1px #99004f, 45px 45px 1px #99004f, 46px 46px 1px #99004f, 47px 47px 1px rgba(153, 0, 79, 0.9), 48px 48px 1px rgba(153, 0, 79, 0.6), 49px 49px 1px rgba(153, 0, 79, 0.4), 50px 50px 1px rgba(153, 0, 79, 0.2),  0px 0px 0px rgba(0,0,0,0.1);
+}
+.social-menu-bar.btn-shadow .btn-flickr:hover {
+  
+}
+.social-menu-bar.btn-shadow .btn-flickr:hover .fa {
+  text-shadow: none;
+}
+.social-menu-bar.btn-000 .btn-flickr:hover {
+  background: #ff0084;
+  
+}
+.social-menu-bar .btn-foursquare {
+  border: none;
+}
+.social-menu-bar .btn-foursquare {
+  
+  background: #005888;
+ 
+  
+}
+.social-menu-bar .btn-foursquare:hover {
+  
+}
+.social-menu-bar.btn-flat .btn-foursquare {
+ 
+  
+  background: #005888;
+  
+}
+.social-menu-bar.btn-flat-square .btn-foursquare {
+  border-radius: 0;
+  background: #005888;
+  
+}
+.social-menu-bar.btn-flat-circle .btn-foursquare {
+  background: #005888;
+  border-radius: 50%;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-foursquare {
+  height: 42px;
+  width: 42px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  border: 4px solid #005888;
+  background: transparent;
+  border-radius: 50%;
+  line-height: 1;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-foursquare .fa {
+  color: #005888;
+}
+.social-menu-bar.btn-grad .btn-foursquare {
+  background: #005888;
+  background-image: -webkit-linear-gradient(top, #00263c 0%, #005888 100%);
+  background-image: -o-linear-gradient(top, #00263c 0%, #005888 100%);
+  background-image: linear-gradient(to bottom, #00263c 0%, #005888 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00263c', endColorstr='#ff005888', GradientType=0);
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-foursquare {
+  background: #005888;
+  background-image: -webkit-linear-gradient(top, #00263c 0%, #005888 100%);
+  background-image: -o-linear-gradient(top, #00263c 0%, #005888 100%);
+  background-image: linear-gradient(to bottom, #00263c 0%, #005888 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00263c', endColorstr='#ff005888', GradientType=0);
+  box-shadow: inset 0px 1px 0px #0089d4, 0px 5px 0px 0px #00263c, 0px 10px 5px #999999;
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-foursquare:hover {
+  box-shadow: none;
+}
+.social-menu-bar.btn-flat-rounded .btn-foursquare {
+  background: #005888;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-foursquare {
+  background: #005888;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-foursquare .fa {
+  text-shadow: 1px 1px 1px #001622, 2px 2px 1px #001622, 3px 3px 1px #001622, 4px 4px 1px #001622, 5px 5px 1px #001622, 6px 6px 1px #001622, 7px 7px 1px #001622, 8px 8px 1px #001622, 9px 9px 1px #001622, 10px 10px 1px #001622, 11px 11px 1px #001622, 12px 12px 1px #001622, 13px 13px 1px #001622, 14px 14px 1px #001622, 15px 15px 1px #001622, 16px 16px 1px #001622, 17px 17px 1px #001622, 18px 18px 1px #001622, 19px 19px 1px #001622, 20px 20px 1px #001622, 21px 21px 1px #001622, 22px 22px 1px #001622, 23px 23px 1px #001622, 24px 24px 1px #001622, 25px 25px 1px #001622, 26px 26px 1px #001622, 27px 27px 1px #001622, 28px 28px 1px #001622, 29px 29px 1px #001622, 30px 30px 1px #001622, 31px 31px 1px #001622, 32px 32px 1px #001622, 33px 33px 1px #001622, 34px 34px 1px #001622, 35px 35px 1px #001622, 36px 36px 1px #001622, 37px 37px 1px #001622, 38px 38px 1px #001622, 39px 39px 1px #001622, 40px 40px 1px #001622, 41px 41px 1px #001622, 42px 42px 1px #001622, 43px 43px 1px #001622, 44px 44px 1px #001622, 45px 45px 1px #001622, 46px 46px 1px #001622, 47px 47px 1px rgba(0, 22, 34, 0.9), 48px 48px 1px rgba(0, 22, 34, 0.6), 49px 49px 1px rgba(0, 22, 34, 0.4), 50px 50px 1px rgba(0, 22, 34, 0.2),  0px 0px 0px rgba(0,0,0,0.1);
+}
+.social-menu-bar.btn-shadow .btn-foursquare:hover {
+  
+}
+.social-menu-bar.btn-shadow .btn-foursquare:hover .fa {
+  text-shadow: none;
+}
+.social-menu-bar.btn-000 .btn-foursquare:hover {
+  background: #005888;
+  
+}
+.social-menu-bar .btn-github {
+  border: none;
+}
+.social-menu-bar .btn-github {
+  
+  background: #303030;
+ 
+  
+}
+.social-menu-bar .btn-github:hover {
+  
+}
+.social-menu-bar.btn-flat .btn-github {
+ 
+  
+  background: #303030;
+  
+}
+.social-menu-bar.btn-flat-square .btn-github {
+  border-radius: 0;
+  background: #303030;
+  
+}
+.social-menu-bar.btn-flat-circle .btn-github {
+  background: #303030;
+  border-radius: 50%;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-github {
+  height: 42px;
+  width: 42px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  border: 4px solid #303030;
+  background: transparent;
+  border-radius: 50%;
+  line-height: 1;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-github .fa {
+  color: #303030;
+}
+.social-menu-bar.btn-grad .btn-github {
+  background: #303030;
+  background-image: -webkit-linear-gradient(top, #0a0a0a 0%, #303030 100%);
+  background-image: -o-linear-gradient(top, #0a0a0a 0%, #303030 100%);
+  background-image: linear-gradient(to bottom, #0a0a0a 0%, #303030 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0a0a0a', endColorstr='#ff303030', GradientType=0);
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-github {
+  background: #303030;
+  background-image: -webkit-linear-gradient(top, #0a0a0a 0%, #303030 100%);
+  background-image: -o-linear-gradient(top, #0a0a0a 0%, #303030 100%);
+  background-image: linear-gradient(to bottom, #0a0a0a 0%, #303030 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0a0a0a', endColorstr='#ff303030', GradientType=0);
+  box-shadow: inset 0px 1px 0px #565656, 0px 5px 0px 0px #0a0a0a, 0px 10px 5px #999999;
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-github:hover {
+  box-shadow: none;
+}
+.social-menu-bar.btn-flat-rounded .btn-github {
+  background: #303030;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-github {
+  background: #303030;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-github .fa {
+  text-shadow: 1px 1px 1px #000000, 2px 2px 1px #000000, 3px 3px 1px #000000, 4px 4px 1px #000000, 5px 5px 1px #000000, 6px 6px 1px #000000, 7px 7px 1px #000000, 8px 8px 1px #000000, 9px 9px 1px #000000, 10px 10px 1px #000000, 11px 11px 1px #000000, 12px 12px 1px #000000, 13px 13px 1px #000000, 14px 14px 1px #000000, 15px 15px 1px #000000, 16px 16px 1px #000000, 17px 17px 1px #000000, 18px 18px 1px #000000, 19px 19px 1px #000000, 20px 20px 1px #000000, 21px 21px 1px #000000, 22px 22px 1px #000000, 23px 23px 1px #000000, 24px 24px 1px #000000, 25px 25px 1px #000000, 26px 26px 1px #000000, 27px 27px 1px #000000, 28px 28px 1px #000000, 29px 29px 1px #000000, 30px 30px 1px #000000, 31px 31px 1px #000000, 32px 32px 1px #000000, 33px 33px 1px #000000, 34px 34px 1px #000000, 35px 35px 1px #000000, 36px 36px 1px #000000, 37px 37px 1px #000000, 38px 38px 1px #000000, 39px 39px 1px #000000, 40px 40px 1px #000000, 41px 41px 1px #000000, 42px 42px 1px #000000, 43px 43px 1px #000000, 44px 44px 1px #000000, 45px 45px 1px #000000, 46px 46px 1px #000000, 47px 47px 1px rgba(0, 0, 0, 0.9), 48px 48px 1px rgba(0, 0, 0, 0.6), 49px 49px 1px rgba(0, 0, 0, 0.4), 50px 50px 1px rgba(0, 0, 0, 0.2),  0px 0px 0px rgba(0,0,0,0.1);
+}
+.social-menu-bar.btn-shadow .btn-github:hover {
+  
+}
+.social-menu-bar.btn-shadow .btn-github:hover .fa {
+  text-shadow: none;
+}
+.social-menu-bar.btn-000 .btn-github:hover {
+  background: #303030;
+  
+}
+.social-menu-bar .btn-google {
+  border: none;
+}
+.social-menu-bar .btn-google {
+  
+  background: #dd4b39;
+ 
+  
+}
+.social-menu-bar .btn-google:hover {
+  
+}
+.social-menu-bar.btn-flat .btn-google {
+ 
+  
+  background: #dd4b39;
+  
+}
+.social-menu-bar.btn-flat-square .btn-google {
+  border-radius: 0;
+  background: #dd4b39;
+  
+}
+.social-menu-bar.btn-flat-circle .btn-google {
+  background: #dd4b39;
+  border-radius: 50%;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-google {
+  height: 42px;
+  width: 42px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  border: 4px solid #dd4b39;
+  background: transparent;
+  border-radius: 50%;
+  line-height: 1;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-google .fa {
+  color: #dd4b39;
+}
+.social-menu-bar.btn-grad .btn-google {
+  background: #dd4b39;
+  background-image: -webkit-linear-gradient(top, #ac2d1e 0%, #dd4b39 100%);
+  background-image: -o-linear-gradient(top, #ac2d1e 0%, #dd4b39 100%);
+  background-image: linear-gradient(to bottom, #ac2d1e 0%, #dd4b39 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffac2d1e', endColorstr='#ffdd4b39', GradientType=0);
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-google {
+  background: #dd4b39;
+  background-image: -webkit-linear-gradient(top, #ac2d1e 0%, #dd4b39 100%);
+  background-image: -o-linear-gradient(top, #ac2d1e 0%, #dd4b39 100%);
+  background-image: linear-gradient(to bottom, #ac2d1e 0%, #dd4b39 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffac2d1e', endColorstr='#ffdd4b39', GradientType=0);
+  box-shadow: inset 0px 1px 0px #e8867a, 0px 5px 0px 0px #ac2d1e, 0px 10px 5px #999999;
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-google:hover {
+  box-shadow: none;
+}
+.social-menu-bar.btn-flat-rounded .btn-google {
+  background: #dd4b39;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-google {
+  background: #dd4b39;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-google .fa {
+  text-shadow: 1px 1px 1px #96271a, 2px 2px 1px #96271a, 3px 3px 1px #96271a, 4px 4px 1px #96271a, 5px 5px 1px #96271a, 6px 6px 1px #96271a, 7px 7px 1px #96271a, 8px 8px 1px #96271a, 9px 9px 1px #96271a, 10px 10px 1px #96271a, 11px 11px 1px #96271a, 12px 12px 1px #96271a, 13px 13px 1px #96271a, 14px 14px 1px #96271a, 15px 15px 1px #96271a, 16px 16px 1px #96271a, 17px 17px 1px #96271a, 18px 18px 1px #96271a, 19px 19px 1px #96271a, 20px 20px 1px #96271a, 21px 21px 1px #96271a, 22px 22px 1px #96271a, 23px 23px 1px #96271a, 24px 24px 1px #96271a, 25px 25px 1px #96271a, 26px 26px 1px #96271a, 27px 27px 1px #96271a, 28px 28px 1px #96271a, 29px 29px 1px #96271a, 30px 30px 1px #96271a, 31px 31px 1px #96271a, 32px 32px 1px #96271a, 33px 33px 1px #96271a, 34px 34px 1px #96271a, 35px 35px 1px #96271a, 36px 36px 1px #96271a, 37px 37px 1px #96271a, 38px 38px 1px #96271a, 39px 39px 1px #96271a, 40px 40px 1px #96271a, 41px 41px 1px #96271a, 42px 42px 1px #96271a, 43px 43px 1px #96271a, 44px 44px 1px #96271a, 45px 45px 1px #96271a, 46px 46px 1px #96271a, 47px 47px 1px rgba(150, 39, 26, 0.9), 48px 48px 1px rgba(150, 39, 26, 0.6), 49px 49px 1px rgba(150, 39, 26, 0.4), 50px 50px 1px rgba(150, 39, 26, 0.2),  0px 0px 0px rgba(0,0,0,0.1);
+}
+.social-menu-bar.btn-shadow .btn-google:hover {
+  
+}
+.social-menu-bar.btn-shadow .btn-google:hover .fa {
+  text-shadow: none;
+}
+.social-menu-bar.btn-000 .btn-google:hover {
+  background: #dd4b39;
+  
+}
+.social-menu-bar .btn-instagram {
+  border: none;
+}
+.social-menu-bar .btn-instagram {
+  
+  background: #3f729b;
+ 
+  
+}
+.social-menu-bar .btn-instagram:hover {
+  
+}
+.social-menu-bar.btn-flat .btn-instagram {
+ 
+  
+  background: #3f729b;
+  
+}
+.social-menu-bar.btn-flat-square .btn-instagram {
+  border-radius: 0;
+  background: #3f729b;
+  
+}
+.social-menu-bar.btn-flat-circle .btn-instagram {
+  background: #3f729b;
+  border-radius: 50%;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-instagram {
+  height: 42px;
+  width: 42px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  border: 4px solid #3f729b;
+  background: transparent;
+  border-radius: 50%;
+  line-height: 1;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-instagram .fa {
+  color: #3f729b;
+}
+.social-menu-bar.btn-grad .btn-instagram {
+  background: #3f729b;
+  background-image: -webkit-linear-gradient(top, #294a65 0%, #3f729b 100%);
+  background-image: -o-linear-gradient(top, #294a65 0%, #3f729b 100%);
+  background-image: linear-gradient(to bottom, #294a65 0%, #3f729b 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff294a65', endColorstr='#ff3f729b', GradientType=0);
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-instagram {
+  background: #3f729b;
+  background-image: -webkit-linear-gradient(top, #294a65 0%, #3f729b 100%);
+  background-image: -o-linear-gradient(top, #294a65 0%, #3f729b 100%);
+  background-image: linear-gradient(to bottom, #294a65 0%, #3f729b 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff294a65', endColorstr='#ff3f729b', GradientType=0);
+  box-shadow: inset 0px 1px 0px #6698c1, 0px 5px 0px 0px #294a65, 0px 10px 5px #999999;
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-instagram:hover {
+  box-shadow: none;
+}
+.social-menu-bar.btn-flat-rounded .btn-instagram {
+  background: #3f729b;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-instagram {
+  background: #3f729b;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-instagram .fa {
+  text-shadow: 1px 1px 1px #223d52, 2px 2px 1px #223d52, 3px 3px 1px #223d52, 4px 4px 1px #223d52, 5px 5px 1px #223d52, 6px 6px 1px #223d52, 7px 7px 1px #223d52, 8px 8px 1px #223d52, 9px 9px 1px #223d52, 10px 10px 1px #223d52, 11px 11px 1px #223d52, 12px 12px 1px #223d52, 13px 13px 1px #223d52, 14px 14px 1px #223d52, 15px 15px 1px #223d52, 16px 16px 1px #223d52, 17px 17px 1px #223d52, 18px 18px 1px #223d52, 19px 19px 1px #223d52, 20px 20px 1px #223d52, 21px 21px 1px #223d52, 22px 22px 1px #223d52, 23px 23px 1px #223d52, 24px 24px 1px #223d52, 25px 25px 1px #223d52, 26px 26px 1px #223d52, 27px 27px 1px #223d52, 28px 28px 1px #223d52, 29px 29px 1px #223d52, 30px 30px 1px #223d52, 31px 31px 1px #223d52, 32px 32px 1px #223d52, 33px 33px 1px #223d52, 34px 34px 1px #223d52, 35px 35px 1px #223d52, 36px 36px 1px #223d52, 37px 37px 1px #223d52, 38px 38px 1px #223d52, 39px 39px 1px #223d52, 40px 40px 1px #223d52, 41px 41px 1px #223d52, 42px 42px 1px #223d52, 43px 43px 1px #223d52, 44px 44px 1px #223d52, 45px 45px 1px #223d52, 46px 46px 1px #223d52, 47px 47px 1px rgba(34, 61, 82, 0.9), 48px 48px 1px rgba(34, 61, 82, 0.6), 49px 49px 1px rgba(34, 61, 82, 0.4), 50px 50px 1px rgba(34, 61, 82, 0.2),  0px 0px 0px rgba(0,0,0,0.1);
+}
+.social-menu-bar.btn-shadow .btn-instagram:hover {
+  
+}
+.social-menu-bar.btn-shadow .btn-instagram:hover .fa {
+  text-shadow: none;
+}
+.social-menu-bar.btn-000 .btn-instagram:hover {
+  background: #3f729b;
+  
+}
+.social-menu-bar .btn-facebook {
+  border: none;
+}
+.social-menu-bar .btn-facebook {
+  /* background: #3b5998; */
+}
+.social-menu-bar .btn-facebook:hover {
+  
+}
+.social-menu-bar.btn-flat .btn-facebook {
+  /* */
+  /*  */
+  /* background: #3b5998; */
+  /*  */
+}
+.social-menu-bar.btn-flat-square .btn-facebook {
+  border-radius: 0;
+  background: #3b5998;
+  
+}
+.social-menu-bar.btn-flat-circle .btn-facebook {
+  background: #3b5998;
+  border-radius: 50%;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-facebook {
+  height: 42px;
+  width: 42px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  border: 4px solid #3b5998;
+  background: transparent;
+  border-radius: 50%;
+  line-height: 1;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-facebook .fa {
+  color: #3b5998;
+}
+.social-menu-bar.btn-grad .btn-facebook {
+  background: #3b5998;
+  background-image: -webkit-linear-gradient(top, #263961 0%, #3b5998 100%);
+  background-image: -o-linear-gradient(top, #263961 0%, #3b5998 100%);
+  background-image: linear-gradient(to bottom, #263961 0%, #3b5998 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff263961', endColorstr='#ff3b5998', GradientType=0);
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-facebook {
+  background: #3b5998;
+  background-image: -webkit-linear-gradient(top, #263961 0%, #3b5998 100%);
+  background-image: -o-linear-gradient(top, #263961 0%, #3b5998 100%);
+  background-image: linear-gradient(to bottom, #263961 0%, #3b5998 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff263961', endColorstr='#ff3b5998', GradientType=0);
+  box-shadow: inset 0px 1px 0px #5f7ec1, 0px 5px 0px 0px #263961, 0px 10px 5px #999999;
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-facebook:hover {
+  box-shadow: none;
+}
+.social-menu-bar.btn-flat-rounded .btn-facebook {
+  background: #3b5998;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-facebook {
+  background: #3b5998;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-facebook .fa {
+  text-shadow: 1px 1px 1px #1e2e4f, 2px 2px 1px #1e2e4f, 3px 3px 1px #1e2e4f, 4px 4px 1px #1e2e4f, 5px 5px 1px #1e2e4f, 6px 6px 1px #1e2e4f, 7px 7px 1px #1e2e4f, 8px 8px 1px #1e2e4f, 9px 9px 1px #1e2e4f, 10px 10px 1px #1e2e4f, 11px 11px 1px #1e2e4f, 12px 12px 1px #1e2e4f, 13px 13px 1px #1e2e4f, 14px 14px 1px #1e2e4f, 15px 15px 1px #1e2e4f, 16px 16px 1px #1e2e4f, 17px 17px 1px #1e2e4f, 18px 18px 1px #1e2e4f, 19px 19px 1px #1e2e4f, 20px 20px 1px #1e2e4f, 21px 21px 1px #1e2e4f, 22px 22px 1px #1e2e4f, 23px 23px 1px #1e2e4f, 24px 24px 1px #1e2e4f, 25px 25px 1px #1e2e4f, 26px 26px 1px #1e2e4f, 27px 27px 1px #1e2e4f, 28px 28px 1px #1e2e4f, 29px 29px 1px #1e2e4f, 30px 30px 1px #1e2e4f, 31px 31px 1px #1e2e4f, 32px 32px 1px #1e2e4f, 33px 33px 1px #1e2e4f, 34px 34px 1px #1e2e4f, 35px 35px 1px #1e2e4f, 36px 36px 1px #1e2e4f, 37px 37px 1px #1e2e4f, 38px 38px 1px #1e2e4f, 39px 39px 1px #1e2e4f, 40px 40px 1px #1e2e4f, 41px 41px 1px #1e2e4f, 42px 42px 1px #1e2e4f, 43px 43px 1px #1e2e4f, 44px 44px 1px #1e2e4f, 45px 45px 1px #1e2e4f, 46px 46px 1px #1e2e4f, 47px 47px 1px rgba(30, 46, 79, 0.9), 48px 48px 1px rgba(30, 46, 79, 0.6), 49px 49px 1px rgba(30, 46, 79, 0.4), 50px 50px 1px rgba(30, 46, 79, 0.2),  0px 0px 0px rgba(0,0,0,0.1);
+}
+.social-menu-bar.btn-shadow .btn-facebook:hover {
+  
+}
+.social-menu-bar.btn-shadow .btn-facebook:hover .fa {
+  text-shadow: none;
+}
+.social-menu-bar.btn-000 .btn-facebook:hover {
+  background: #3b5998;
+  
+}
+.social-menu-bar .btn-linkedin {
+  border: none;
+}
+.social-menu-bar .btn-linkedin {
+  
+  background: #005f8d;
+ 
+  
+}
+.social-menu-bar .btn-linkedin:hover {
+  
+}
+.social-menu-bar.btn-flat .btn-linkedin {
+ 
+  
+  background: #005f8d;
+  
+}
+.social-menu-bar.btn-flat-square .btn-linkedin {
+  border-radius: 0;
+  background: #005f8d;
+  
+}
+.social-menu-bar.btn-flat-circle .btn-linkedin {
+  background: #005f8d;
+  border-radius: 50%;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-linkedin {
+  height: 42px;
+  width: 42px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  border: 4px solid #005f8d;
+  background: transparent;
+  border-radius: 50%;
+  line-height: 1;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-linkedin .fa {
+  color: #005f8d;
+}
+.social-menu-bar.btn-grad .btn-linkedin {
+  background: #005f8d;
+  background-image: -webkit-linear-gradient(top, #002b41 0%, #005f8d 100%);
+  background-image: -o-linear-gradient(top, #002b41 0%, #005f8d 100%);
+  background-image: linear-gradient(to bottom, #002b41 0%, #005f8d 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff002b41', endColorstr='#ff005f8d', GradientType=0);
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-linkedin {
+  background: #005f8d;
+  background-image: -webkit-linear-gradient(top, #002b41 0%, #005f8d 100%);
+  background-image: -o-linear-gradient(top, #002b41 0%, #005f8d 100%);
+  background-image: linear-gradient(to bottom, #002b41 0%, #005f8d 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff002b41', endColorstr='#ff005f8d', GradientType=0);
+  box-shadow: inset 0px 1px 0px #0093da, 0px 5px 0px 0px #002b41, 0px 10px 5px #999999;
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-linkedin:hover {
+  box-shadow: none;
+}
+.social-menu-bar.btn-flat-rounded .btn-linkedin {
+  background: #005f8d;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-linkedin {
+  background: #005f8d;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-linkedin .fa {
+  text-shadow: 1px 1px 1px #001a27, 2px 2px 1px #001a27, 3px 3px 1px #001a27, 4px 4px 1px #001a27, 5px 5px 1px #001a27, 6px 6px 1px #001a27, 7px 7px 1px #001a27, 8px 8px 1px #001a27, 9px 9px 1px #001a27, 10px 10px 1px #001a27, 11px 11px 1px #001a27, 12px 12px 1px #001a27, 13px 13px 1px #001a27, 14px 14px 1px #001a27, 15px 15px 1px #001a27, 16px 16px 1px #001a27, 17px 17px 1px #001a27, 18px 18px 1px #001a27, 19px 19px 1px #001a27, 20px 20px 1px #001a27, 21px 21px 1px #001a27, 22px 22px 1px #001a27, 23px 23px 1px #001a27, 24px 24px 1px #001a27, 25px 25px 1px #001a27, 26px 26px 1px #001a27, 27px 27px 1px #001a27, 28px 28px 1px #001a27, 29px 29px 1px #001a27, 30px 30px 1px #001a27, 31px 31px 1px #001a27, 32px 32px 1px #001a27, 33px 33px 1px #001a27, 34px 34px 1px #001a27, 35px 35px 1px #001a27, 36px 36px 1px #001a27, 37px 37px 1px #001a27, 38px 38px 1px #001a27, 39px 39px 1px #001a27, 40px 40px 1px #001a27, 41px 41px 1px #001a27, 42px 42px 1px #001a27, 43px 43px 1px #001a27, 44px 44px 1px #001a27, 45px 45px 1px #001a27, 46px 46px 1px #001a27, 47px 47px 1px rgba(0, 26, 39, 0.9), 48px 48px 1px rgba(0, 26, 39, 0.6), 49px 49px 1px rgba(0, 26, 39, 0.4), 50px 50px 1px rgba(0, 26, 39, 0.2),  0px 0px 0px rgba(0,0,0,0.1);
+}
+.social-menu-bar.btn-shadow .btn-linkedin:hover {
+  
+}
+.social-menu-bar.btn-shadow .btn-linkedin:hover .fa {
+  text-shadow: none;
+}
+.social-menu-bar.btn-000 .btn-linkedin:hover {
+  background: #005f8d;
+  
+}
+.social-menu-bar .btn-tumblr {
+  border: none;
+}
+.social-menu-bar .btn-tumblr {
+  
+  background: #2c4762;
+ 
+  
+}
+.social-menu-bar .btn-tumblr:hover {
+  
+}
+.social-menu-bar.btn-flat .btn-tumblr {
+ 
+  
+  background: #2c4762;
+  
+}
+.social-menu-bar.btn-flat-square .btn-tumblr {
+  border-radius: 0;
+  background: #2c4762;
+  
+}
+.social-menu-bar.btn-flat-circle .btn-tumblr {
+  background: #2c4762;
+  border-radius: 50%;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-tumblr {
+  height: 42px;
+  width: 42px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  border: 4px solid #2c4762;
+  background: transparent;
+  border-radius: 50%;
+  line-height: 1;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-tumblr .fa {
+  color: #2c4762;
+}
+.social-menu-bar.btn-grad .btn-tumblr {
+  background: #2c4762;
+  background-image: -webkit-linear-gradient(top, #14212d 0%, #2c4762 100%);
+  background-image: -o-linear-gradient(top, #14212d 0%, #2c4762 100%);
+  background-image: linear-gradient(to bottom, #14212d 0%, #2c4762 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff14212d', endColorstr='#ff2c4762', GradientType=0);
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-tumblr {
+  background: #2c4762;
+  background-image: -webkit-linear-gradient(top, #14212d 0%, #2c4762 100%);
+  background-image: -o-linear-gradient(top, #14212d 0%, #2c4762 100%);
+  background-image: linear-gradient(to bottom, #14212d 0%, #2c4762 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff14212d', endColorstr='#ff2c4762', GradientType=0);
+  box-shadow: inset 0px 1px 0px #446d97, 0px 5px 0px 0px #14212d, 0px 10px 5px #999999;
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-tumblr:hover {
+  box-shadow: none;
+}
+.social-menu-bar.btn-flat-rounded .btn-tumblr {
+  background: #2c4762;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-tumblr {
+  background: #2c4762;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-tumblr .fa {
+  text-shadow: 1px 1px 1px #0c141c, 2px 2px 1px #0c141c, 3px 3px 1px #0c141c, 4px 4px 1px #0c141c, 5px 5px 1px #0c141c, 6px 6px 1px #0c141c, 7px 7px 1px #0c141c, 8px 8px 1px #0c141c, 9px 9px 1px #0c141c, 10px 10px 1px #0c141c, 11px 11px 1px #0c141c, 12px 12px 1px #0c141c, 13px 13px 1px #0c141c, 14px 14px 1px #0c141c, 15px 15px 1px #0c141c, 16px 16px 1px #0c141c, 17px 17px 1px #0c141c, 18px 18px 1px #0c141c, 19px 19px 1px #0c141c, 20px 20px 1px #0c141c, 21px 21px 1px #0c141c, 22px 22px 1px #0c141c, 23px 23px 1px #0c141c, 24px 24px 1px #0c141c, 25px 25px 1px #0c141c, 26px 26px 1px #0c141c, 27px 27px 1px #0c141c, 28px 28px 1px #0c141c, 29px 29px 1px #0c141c, 30px 30px 1px #0c141c, 31px 31px 1px #0c141c, 32px 32px 1px #0c141c, 33px 33px 1px #0c141c, 34px 34px 1px #0c141c, 35px 35px 1px #0c141c, 36px 36px 1px #0c141c, 37px 37px 1px #0c141c, 38px 38px 1px #0c141c, 39px 39px 1px #0c141c, 40px 40px 1px #0c141c, 41px 41px 1px #0c141c, 42px 42px 1px #0c141c, 43px 43px 1px #0c141c, 44px 44px 1px #0c141c, 45px 45px 1px #0c141c, 46px 46px 1px #0c141c, 47px 47px 1px rgba(12, 20, 28, 0.9), 48px 48px 1px rgba(12, 20, 28, 0.6), 49px 49px 1px rgba(12, 20, 28, 0.4), 50px 50px 1px rgba(12, 20, 28, 0.2),  0px 0px 0px rgba(0,0,0,0.1);
+}
+.social-menu-bar.btn-shadow .btn-tumblr:hover {
+  
+}
+.social-menu-bar.btn-shadow .btn-tumblr:hover .fa {
+  text-shadow: none;
+}
+.social-menu-bar.btn-000 .btn-tumblr:hover {
+  background: #2c4762;
+  
+}
+.social-menu-bar .btn-twitter {
+  border: none;
+}
+.social-menu-bar .btn-twitter {
+  
+  background: #559cee;
+ 
+  
+}
+.social-menu-bar .btn-twitter:hover {
+  
+}
+.social-menu-bar.btn-flat .btn-twitter {
+ 
+  
+  background: #559cee;
+  
+}
+.social-menu-bar.btn-flat-square .btn-twitter {
+  border-radius: 0;
+  background: #559cee;
+  
+}
+.social-menu-bar.btn-flat-circle .btn-twitter {
+  background: #559cee;
+  border-radius: 50%;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-twitter {
+  height: 42px;
+  width: 42px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  border: 4px solid #559cee;
+  background: transparent;
+  border-radius: 50%;
+  line-height: 1;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-twitter .fa {
+  color: #559cee;
+}
+.social-menu-bar.btn-grad .btn-twitter {
+  background: #559cee;
+  background-image: -webkit-linear-gradient(top, #1674e0 0%, #559cee 100%);
+  background-image: -o-linear-gradient(top, #1674e0 0%, #559cee 100%);
+  background-image: linear-gradient(to bottom, #1674e0 0%, #559cee 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1674e0', endColorstr='#ff559cee', GradientType=0);
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-twitter {
+  background: #559cee;
+  background-image: -webkit-linear-gradient(top, #1674e0 0%, #559cee 100%);
+  background-image: -o-linear-gradient(top, #1674e0 0%, #559cee 100%);
+  background-image: linear-gradient(to bottom, #1674e0 0%, #559cee 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1674e0', endColorstr='#ff559cee', GradientType=0);
+  box-shadow: inset 0px 1px 0px #9bc4f5, 0px 5px 0px 0px #1674e0, 0px 10px 5px #999999;
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-twitter:hover {
+  box-shadow: none;
+}
+.social-menu-bar.btn-flat-rounded .btn-twitter {
+  background: #559cee;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-twitter {
+  background: #559cee;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-twitter .fa {
+  text-shadow: 1px 1px 1px #1468c9, 2px 2px 1px #1468c9, 3px 3px 1px #1468c9, 4px 4px 1px #1468c9, 5px 5px 1px #1468c9, 6px 6px 1px #1468c9, 7px 7px 1px #1468c9, 8px 8px 1px #1468c9, 9px 9px 1px #1468c9, 10px 10px 1px #1468c9, 11px 11px 1px #1468c9, 12px 12px 1px #1468c9, 13px 13px 1px #1468c9, 14px 14px 1px #1468c9, 15px 15px 1px #1468c9, 16px 16px 1px #1468c9, 17px 17px 1px #1468c9, 18px 18px 1px #1468c9, 19px 19px 1px #1468c9, 20px 20px 1px #1468c9, 21px 21px 1px #1468c9, 22px 22px 1px #1468c9, 23px 23px 1px #1468c9, 24px 24px 1px #1468c9, 25px 25px 1px #1468c9, 26px 26px 1px #1468c9, 27px 27px 1px #1468c9, 28px 28px 1px #1468c9, 29px 29px 1px #1468c9, 30px 30px 1px #1468c9, 31px 31px 1px #1468c9, 32px 32px 1px #1468c9, 33px 33px 1px #1468c9, 34px 34px 1px #1468c9, 35px 35px 1px #1468c9, 36px 36px 1px #1468c9, 37px 37px 1px #1468c9, 38px 38px 1px #1468c9, 39px 39px 1px #1468c9, 40px 40px 1px #1468c9, 41px 41px 1px #1468c9, 42px 42px 1px #1468c9, 43px 43px 1px #1468c9, 44px 44px 1px #1468c9, 45px 45px 1px #1468c9, 46px 46px 1px #1468c9, 47px 47px 1px rgba(20, 104, 201, 0.9), 48px 48px 1px rgba(20, 104, 201, 0.6), 49px 49px 1px rgba(20, 104, 201, 0.4), 50px 50px 1px rgba(20, 104, 201, 0.2),  0px 0px 0px rgba(0,0,0,0.1);
+}
+.social-menu-bar.btn-shadow .btn-twitter:hover {
+  
+}
+.social-menu-bar.btn-shadow .btn-twitter:hover .fa {
+  text-shadow: none;
+}
+.social-menu-bar.btn-000 .btn-twitter:hover {
+  background: #559cee;
+  
+}
+.social-menu-bar .btn-vk {
+  border: none;
+}
+.social-menu-bar .btn-vk {
+  
+  background: #587ea3;
+ 
+  
+}
+.social-menu-bar .btn-vk:hover {
+  
+}
+.social-menu-bar.btn-flat .btn-vk {
+ 
+  
+  background: #587ea3;
+  
+}
+.social-menu-bar.btn-flat-square .btn-vk {
+  border-radius: 0;
+  background: #587ea3;
+  
+}
+.social-menu-bar.btn-flat-circle .btn-vk {
+  background: #587ea3;
+  border-radius: 50%;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-vk {
+  height: 42px;
+  width: 42px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  border: 4px solid #587ea3;
+  background: transparent;
+  border-radius: 50%;
+  line-height: 1;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-vk .fa {
+  color: #587ea3;
+}
+.social-menu-bar.btn-grad .btn-vk {
+  background: #587ea3;
+  background-image: -webkit-linear-gradient(top, #3d5871 0%, #587ea3 100%);
+  background-image: -o-linear-gradient(top, #3d5871 0%, #587ea3 100%);
+  background-image: linear-gradient(to bottom, #3d5871 0%, #587ea3 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3d5871', endColorstr='#ff587ea3', GradientType=0);
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-vk {
+  background: #587ea3;
+  background-image: -webkit-linear-gradient(top, #3d5871 0%, #587ea3 100%);
+  background-image: -o-linear-gradient(top, #3d5871 0%, #587ea3 100%);
+  background-image: linear-gradient(to bottom, #3d5871 0%, #587ea3 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3d5871', endColorstr='#ff587ea3', GradientType=0);
+  box-shadow: inset 0px 1px 0px #88a4bf, 0px 5px 0px 0px #3d5871, 0px 10px 5px #999999;
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-vk:hover {
+  box-shadow: none;
+}
+.social-menu-bar.btn-flat-rounded .btn-vk {
+  background: #587ea3;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-vk {
+  background: #587ea3;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-vk .fa {
+  text-shadow: 1px 1px 1px #344b61, 2px 2px 1px #344b61, 3px 3px 1px #344b61, 4px 4px 1px #344b61, 5px 5px 1px #344b61, 6px 6px 1px #344b61, 7px 7px 1px #344b61, 8px 8px 1px #344b61, 9px 9px 1px #344b61, 10px 10px 1px #344b61, 11px 11px 1px #344b61, 12px 12px 1px #344b61, 13px 13px 1px #344b61, 14px 14px 1px #344b61, 15px 15px 1px #344b61, 16px 16px 1px #344b61, 17px 17px 1px #344b61, 18px 18px 1px #344b61, 19px 19px 1px #344b61, 20px 20px 1px #344b61, 21px 21px 1px #344b61, 22px 22px 1px #344b61, 23px 23px 1px #344b61, 24px 24px 1px #344b61, 25px 25px 1px #344b61, 26px 26px 1px #344b61, 27px 27px 1px #344b61, 28px 28px 1px #344b61, 29px 29px 1px #344b61, 30px 30px 1px #344b61, 31px 31px 1px #344b61, 32px 32px 1px #344b61, 33px 33px 1px #344b61, 34px 34px 1px #344b61, 35px 35px 1px #344b61, 36px 36px 1px #344b61, 37px 37px 1px #344b61, 38px 38px 1px #344b61, 39px 39px 1px #344b61, 40px 40px 1px #344b61, 41px 41px 1px #344b61, 42px 42px 1px #344b61, 43px 43px 1px #344b61, 44px 44px 1px #344b61, 45px 45px 1px #344b61, 46px 46px 1px #344b61, 47px 47px 1px rgba(52, 75, 97, 0.9), 48px 48px 1px rgba(52, 75, 97, 0.6), 49px 49px 1px rgba(52, 75, 97, 0.4), 50px 50px 1px rgba(52, 75, 97, 0.2),  0px 0px 0px rgba(0,0,0,0.1);
+}
+.social-menu-bar.btn-shadow .btn-vk:hover {
+  
+}
+.social-menu-bar.btn-shadow .btn-vk:hover .fa {
+  text-shadow: none;
+}
+.social-menu-bar.btn-000 .btn-vk:hover {
+  background: #587ea3;
+  
+}
+.social-menu-bar .btn-youtube {
+  border: none;
+}
+.social-menu-bar .btn-youtube {
+  
+  background: #cd201f;
+ 
+  
+}
+.social-menu-bar .btn-youtube:hover {
+  
+}
+.social-menu-bar.btn-flat .btn-youtube {
+ 
+  
+  background: #cd201f;
+  
+}
+.social-menu-bar.btn-flat-square .btn-youtube {
+  border-radius: 0;
+  background: #cd201f;
+  
+}
+.social-menu-bar.btn-flat-circle .btn-youtube {
+  background: #cd201f;
+  border-radius: 50%;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-youtube {
+  height: 42px;
+  width: 42px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  border: 4px solid #cd201f;
+  background: transparent;
+  border-radius: 50%;
+  line-height: 1;
+  
+}
+.social-menu-bar.btn-flat-circle-border .btn-youtube .fa {
+  color: #cd201f;
+}
+.social-menu-bar.btn-grad .btn-youtube {
+  background: #cd201f;
+  background-image: -webkit-linear-gradient(top, #8b1615 0%, #cd201f 100%);
+  background-image: -o-linear-gradient(top, #8b1615 0%, #cd201f 100%);
+  background-image: linear-gradient(to bottom, #8b1615 0%, #cd201f 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8b1615', endColorstr='#ffcd201f', GradientType=0);
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-youtube {
+  background: #cd201f;
+  background-image: -webkit-linear-gradient(top, #8b1615 0%, #cd201f 100%);
+  background-image: -o-linear-gradient(top, #8b1615 0%, #cd201f 100%);
+  background-image: linear-gradient(to bottom, #8b1615 0%, #cd201f 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8b1615', endColorstr='#ffcd201f', GradientType=0);
+  box-shadow: inset 0px 1px 0px #e55453, 0px 5px 0px 0px #8b1615, 0px 10px 5px #999999;
+ 
+  
+}
+.social-menu-bar.btn-3d .btn-youtube:hover {
+  box-shadow: none;
+}
+.social-menu-bar.btn-flat-rounded .btn-youtube {
+  background: #cd201f;
+  
+ 
+}
+.social-menu-bar.btn-shadow .btn-youtube {
+  background: #cd201f;
+  
+ 
+}
+
+a.btn.btn-social-icon.btn-ml {
+    width: auto;
+}
+
+.btn-instagram {
+  background-image: -webkit-radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%) !important;
+  background-image: -o-radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%) !important;
+  background-image: radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%) !important;
+}
+
+.btn-social-icon:hover .fa {
+    /* text-shadow: none; */
+    color: #010101;
+}
+.navbar-default .navbar-nav > li > a::after{
+    top: 0;
+}
+ .navbar-default .navbar-nav > li > a::before{
+    bottom: 0;
+}
