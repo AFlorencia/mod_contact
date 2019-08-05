@@ -26,6 +26,8 @@
 	<languages>
 		<language tag="en-GB">language/en-GB/en-GB.mod_as_contact_form.ini</language>
 		<language tag="en-GB">language/en-GB/en-GB.mod_as_contact_form.sys.ini</language>
+		<language tag="es-ES">language/es-ES/es-ES.mod_as_contact_form.ini</language>
+		<language tag="es-ES">language/es-ES/es-ES.mod_as_contact_form.sys.ini</language>
 	</languages>
 	<config>
 		<fields name="params">
